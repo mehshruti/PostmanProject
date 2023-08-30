@@ -36,6 +36,11 @@ public class GetImplClass implements GetInterface {
 		}
 		return c;
 	}
+	@Override
+	public GetConfig addCourse(GetConfig getConfig) {
+		list.add(getConfig);
+		return getConfig;
+	}
 	
 	
 

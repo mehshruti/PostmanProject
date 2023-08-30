@@ -8,5 +8,5 @@ public interface GetInterface {
 	List<GetConfig> getcourse();
 	
 	public GetConfig getcourse(Long CourseId);
-
+	public GetConfig addCourse(GetConfig getConfig); 
 }
