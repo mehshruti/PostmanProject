@@ -6,5 +6,7 @@ import com.controller.Config.GetConfig;
 
 public interface GetInterface {
 	List<GetConfig> getcourse();
+	
+	public GetConfig getcourse(Long CourseId);
 
 }
