@@ -7,4 +7,6 @@ import com.MainPackage.Config.EmployeeDetails;
 
 public interface EmpInt {
 public List<EmployeeDetails> getInfo();
+public EmployeeDetails getDet(Long MobNo);
+
 }

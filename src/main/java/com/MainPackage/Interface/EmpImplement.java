@@ -22,4 +22,19 @@ public class EmpImplement implements EmpInt {
 		return list;
 	}
 
+
+	@Override
+	public EmployeeDetails getDet(Long MobNo) 
+	{
+		EmployeeDetails emp = null;
+		for(EmployeeDetails emDetails : list) {
+			if(emDetails.getMob()==MobNo)
+			{
+				emp= emDetails;
+				break;
+			}
+		}
+		return emp;
+	}
+
 }
