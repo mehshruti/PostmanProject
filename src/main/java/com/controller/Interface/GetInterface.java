@@ -9,4 +9,5 @@ public interface GetInterface {
 	
 	public GetConfig getcourse(Long CourseId);
 	public GetConfig addCourse(GetConfig getConfig); 
+	
 }

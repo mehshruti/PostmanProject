@@ -32,4 +32,5 @@ public GetConfig AddCourse( @RequestBody GetConfig getConfig)
 {
 	return this.getinterface.addCourse(getConfig);
 }
+
 }

@@ -41,7 +41,5 @@ public class GetImplClass implements GetInterface {
 		list.add(getConfig);
 		return getConfig;
 	}
-	
-	
 
 }
