@@ -8,5 +8,6 @@ public interface StudentInt {
 	
 	public List<StudentDet> GetStudent();
 	public StudentDet GetDetails(Long StudentId);
+	public StudentDet addCourse(StudentDet studentDet);
 
 }

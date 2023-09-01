@@ -34,5 +34,10 @@ public class StudentImpl implements StudentInt {
 		}
 		return c;
 	}
+	@Override
+	public StudentDet addCourse(StudentDet studentDet) {
+		list.add(studentDet);
+		return studentDet;
+	}
 
 }

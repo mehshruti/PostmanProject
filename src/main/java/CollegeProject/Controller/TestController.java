@@ -5,6 +5,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import CollegeProject.Interface.StudentImpl;
@@ -27,5 +31,10 @@ public class TestController {
 	public StudentDet GetDetails(@PathVariable String StudentId)
 	{
 		return this.studentInt.GetDetails(Long.parseLong(StudentId));
+		}
+	@PutMapping("/test")
+	public StudentDet addStudent(@RequestBody StudentDet studentDet)
+	{
+		return this.studentInt.addCourse(studentDet);
 	}
 }
