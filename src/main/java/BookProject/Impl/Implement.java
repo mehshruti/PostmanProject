@@ -47,4 +47,12 @@ public class Implement {
 		list=list.stream().filter(book->book.getId()!=bookId).collect(Collectors.toList());
 //		return Book;
 	}
+	public void updateBook(Book book,long bookId) {
+		list=list.stream().map(bok->{
+			if(bok.getId()==bookId) {
+				bok.setBookname(book.getBookname());
+				bok.setAuthor(book.getAuthor());
+				}
+				return bok;}).collect(Collectors.toList());
+	}
 	}
