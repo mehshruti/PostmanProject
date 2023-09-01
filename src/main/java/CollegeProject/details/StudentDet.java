@@ -11,19 +11,19 @@ public class StudentDet
 	{
 	
 	}	
-	public StudentDet(long iD, String name, int roll, String add) {
+	public StudentDet(long ID, String name, int roll, String add) {
 		super();
-		ID = iD;
+		this.ID = ID;
 		this.name = name;
-		Roll = roll;
-		Add = add;
+		this.Roll = roll;
+		this.Add = add;
 	}
 	
 	public long getID() {
 		return ID;
 	}
-	public void setID(long iD) {
-		ID = iD;
+	public void setID(long ID) {
+		this.ID = ID;
 	}
 	public String getName() {
 		return name;
@@ -35,13 +35,13 @@ public class StudentDet
 		return Roll;
 	}
 	public void setRoll(int roll) {
-		Roll = roll;
+		this.Roll = roll;
 	}
 	public String getAdd() {
 		return Add;
 	}
 	public void setAdd(String add) {
-		Add = add;
+		this.Add = add;
 	}
 
 }

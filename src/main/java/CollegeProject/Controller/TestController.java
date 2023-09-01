@@ -2,6 +2,7 @@ package CollegeProject.Controller;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,6 +12,7 @@ import CollegeProject.details.StudentDet;
 
 @RestController
 public class TestController {
+	@Autowired
 	private StudentInt studentInt; 
 	@GetMapping("/home")
 	public String Test() {
