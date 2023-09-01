@@ -2,6 +2,7 @@ package BookProject.Impl;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Component;
 
@@ -35,15 +36,15 @@ public class Implement {
 		return book;
 	}
 	
-	public Book delBook(long bookId, Book Book) {
-		for(Book book :list)
-		{
-			if(book.getId()==bookId)
-				list.remove(i);
-				i=i+1;
-		}
-		System.out.print("SucuessFully delete");
-//		list= list.stream().filter(book->book.getId()==bookId).collect(Collectors.toList());
-		return Book;
+	public void delBook(long bookId) {
+//		for(Book book :list)
+//		{
+//			if(book.getId()==bookId)
+//				list.remove(i);
+//				i=i+1;
+//		}
+//		System.out.print(false);
+		list=list.stream().filter(book->book.getId()!=bookId).collect(Collectors.toList());
+//		return Book;
 	}
 	}

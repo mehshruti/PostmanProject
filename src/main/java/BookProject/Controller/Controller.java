@@ -32,9 +32,9 @@ public Book getdata(@PathVariable("id") long id)
 public Book addBook(@RequestBody Book book) {
 	return this.implement.addBook(book);
 }
-@DeleteMapping("/Book/{bookId}")
-public Book del(@PathVariable("bookId") long bookid,Book book)
+@DeleteMapping("/Book/{bookid}")
+public void delbook(@PathVariable("bookid") long bookid)
 {
-return this.implement.delBook(bookid,book);
+ this.implement.delBook(bookid);
 }
 }
