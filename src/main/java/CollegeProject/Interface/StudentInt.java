@@ -7,5 +7,6 @@ import CollegeProject.details.StudentDet;
 public interface StudentInt {
 	
 	public List<StudentDet> GetStudent();
+	public StudentDet GetDetails(Long StudentId);
 
 }

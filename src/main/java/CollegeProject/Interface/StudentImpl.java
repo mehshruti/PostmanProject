@@ -14,11 +14,25 @@ public class StudentImpl implements StudentInt {
 	{
 	list= new ArrayList<>();
 	list.add(new StudentDet(12321,"shruti",123," koeri bari gaya"));
+	list.add(new StudentDet(12312,"surbhi",120," koeri bari gaya"));
 	}
 	@Override
 	public List<StudentDet> GetStudent() {
 		
 		return list;
+	}
+	@Override
+	public StudentDet GetDetails(Long StudentId) {
+		StudentDet c= null;
+		for(StudentDet Student : list)
+		{
+			if(Student.getID()==StudentId)
+			{
+				c=Student;
+				break;
+			}
+		}
+		return c;
 	}
 
 }
